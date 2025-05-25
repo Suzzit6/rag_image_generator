@@ -78,7 +78,7 @@ def load_vectorstore():
         return None
     
     
-def create_qa_chain(vectorstore, api_key="AIzaSyDQ5LZxY0TSqCHN2Be72vuK0I811jLYCsE"):
+def create_qa_chain(vectorstore, api_key=""):
     """Create a question answering chain with the vector store"""
     if vectorstore is None:
         return None
@@ -89,7 +89,7 @@ def create_qa_chain(vectorstore, api_key="AIzaSyDQ5LZxY0TSqCHN2Be72vuK0I811jLYCs
     )
     
     if not api_key:
-        api_key = "AIzaSyDQ5LZxY0TSqCHN2Be72vuK0I811jLYCsE"
+        api_key = ""
         return None
     
     # # Set the API key in the environment
