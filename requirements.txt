@@ -13,3 +13,8 @@ requests==2.31.0
 pillow==10.3.0
 python-dotenv==1.0.1
 pypdf
+torch>=2.0.0
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+docx2txt>=0.8
